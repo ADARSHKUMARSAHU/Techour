@@ -1,0 +1,190 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+.top_bar{
+	background: tomato;
+	padding: 5px 0;
+}
+.social_icons{
+	margin-right: 5px;
+}
+.contact_info{
+	color:white;
+}
+.my_menu{
+	margin-top: 20px;
+	font-size: 20px;
+
+}
+p{
+	font-size: 20px;
+}
+.lang{
+	margin-top: 25px;
+}
+.courses{
+	background: radial-gradient(circle,#009CDE,#003087);
+	padding: 25px 0;
+}
+.courses .top_margin{
+	margin-top: 25px;
+}
+@media (max-width: 603px;){
+	.courses[class*="col-"]{
+		margin-bottom: 25px;
+	}
+}
+nav {
+	height: 10vh;
+	background: #5b78c7;
+
+}
+.nav-links {
+	display: flex;
+	list-style: none;
+	width: 50%;
+	/*background: lightcoral;*/
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: auto;
+}
+.nav-links li a{
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+/*.landing{
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}*/
+@media screen and (max-width: 768px) {
+	.line {
+		width: 30px;
+		height:3px;
+		background: white;
+		margin: 5px;
+	}
+	nav {
+		position: relative;
+	}
+	.hanburger {
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 50%;
+		transform: translate(-5%,-50%);
+		z-index: 2;
+	}
+	.nav-links{
+		position:fixed;
+		background: #5b78c7;
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		clip-path: circle(100px at 90% -10%);
+		-webkit-clip-path: circle(100px at 90% -10%);
+		transition: all 1s ease-out;
+	}
+	.nav-links.open {
+		clip-path: circle(1000px at 90% -10%);
+		-webkit-clip-path:circle(1000px at 90% -10%);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.main{
+ 	width: 1350px;
+ 	overflow: hidden;
+}
+.slide{
+	
+	position: relative;
+	width: 7000px;
+	animation-name: adarsh;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+;
+.slide img{
+	width: 100%;
+	height: 500px;
+	float:left;
+}
+@keyframes adarsh{
+	0%{
+	 left: 0px;
+	}
+	20%{
+     left: 0px;
+	}
+	25%{left: -1350px;}
+	45%{left: -1350px;}
+	50%{left: -2700px;}
+	70%{left: -2700px;}
+	75%{left: -4050px;}
+	95%{left: -4050px;}
+	100%{left: -5400px;}
+}
+
+/*h4{
+	animation-name: text;
+	animation-timing-function: steps(8);
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 4px solid black;
+	font-family: consolas;
+	width: 8ch;
+	
+
+}
+@keyframes text{
+	0%{
+		width:0ch;
+	}
+	100%{
+		width:8ch;
+	}
+
+}*/
+/*h2{
+	text-align: center;
+}
+hr{
+	background-color: black;
+	color: red;
+
+}
+*/
+
+
+
+
+	*/

@@ -1,0 +1,144 @@
+body{
+	font-family: sans-serif;
+}
+
+.top_bar{
+	background: tomato;
+	padding: 5px 0;
+}
+.social_icons{
+	margin-right: 5px;
+}
+.contact_info{
+	color:white;
+}
+.my_menu{
+	margin-top: 20px;
+	font-size: 20px;
+
+}
+p{
+	font-size: 20px;
+}
+.lang{
+	margin-top: 25px;
+}
+.courses{
+	background: radial-gradient(circle,#009CDE,#003087);
+	padding: 25px 0;
+}
+.courses .top_margin{
+	margin-top: 25px;
+}
+@media (max-width: 603px;){
+	.courses[class*="col-"]{
+		margin-bottom: 25px;
+	}
+}
+nav {
+	height: 10vh;
+	background: radial-gradient(circle,#009CDE,#003087);
+
+}
+.nav-links {
+
+	display: flex;
+	list-style: none;
+	width: 50%;
+	/*background: lightcoral;*/
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: auto;
+}
+.ut{
+	width: 50%;
+	padding: 12px;
+	font-size: 30px;
+	text-align: center;
+	justify-content: center;
+	align-items: left;
+	color: white;
+	float: left;
+}
+.nav-links li a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+nav li:hover{
+	background: tomato;
+	font-size: 10px;
+	box-shadow: 0 0 10px 17px tomato;
+}
+@media screen and (max-width: 768px) {
+	.line {
+		width: 30px;
+		height:3px;
+		background: white;
+		margin: 5px;
+	}
+	nav {
+		position: relative;
+	}
+	.hanburger {
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 50%;
+		transform: translate(-5%,-50%);
+		z-index: 2;
+	}
+	.nav-links{
+		position:fixed;
+		/*background: #5b78c7;*/
+		height: 70vh;
+		width: 100%;
+		flex-direction: column;
+		clip-path: circle(100px at 50% -18%);
+		-webkit-clip-path: circle(100px at 50% -18%);
+		transition: all 1s ease-out;
+		
+	}
+	.nav-links.open {
+		/*position: fixed;*/
+		position: absolute;
+		clip-path: circle(500px at 50% -18%);
+		-webkit-clip-path:circle(500px at 50% -18%);
+		background: radial-gradient(circle,#009CDE,#003087);
+	}
+}
+.ut{
+	animation-name: text;
+	animation-timing-function: steps(7);
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 1px solid black;
+	font-family: consolas;
+	width: 10ch;
+	
+
+}
+@keyframes text{
+	0%{
+		width:0ch;
+	}
+	100%{
+		width:7ch;
+	}
+
+#footer{
+	background: green;
+}
+
+
+
+
+
+
+
+
+
+
